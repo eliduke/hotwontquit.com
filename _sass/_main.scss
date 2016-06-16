@@ -1,11 +1,20 @@
 body {
-  background-color: #222;
   color: #fff;
-  margin: 0 0 50px 0;
+  margin: 0;
+}
+
+#gettin-sweaty {
+  background-color: #222;
+  padding-bottom: 20px;
+}
+
+#gettin-hard {
+  padding-top: 20px;
+  background-color: #FFDAE0;
 }
 
 img {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 iframe {
@@ -35,7 +44,7 @@ h1.quit-front { margin: -112px 15px 10px 0; }
 h2 {
   font-size: 240%;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 40px 0 20px 0;
   background-color: #FF66B2;
   padding: 10px;
   font-weight: bold;
@@ -43,7 +52,7 @@ h2 {
 
 h3 {
   text-align: center;
-  margin: 30px 0;
+  margin: 10px 0 30px 0;
   font-weight: bold;
   background-color: #3CF;
   padding: 15px;
