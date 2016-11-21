@@ -4,7 +4,7 @@ body {
 
 #header {
   padding: 20px 0;
-  background: url('../images/background.png');
+  background: url('../images/background-dark.png');
   background-size: cover;
   background-color: #222;
 }
@@ -22,7 +22,7 @@ body {
 
 #gettin-hard {
   padding-bottom: 20px;
-  background-color: #FFDAE0;
+  background-color: #eee;
   h1.header { color: #222 }
 }
 
@@ -35,6 +35,8 @@ body {
 
 #footer {
   padding: 20px 0;
+  background: url('../images/background-light.png');
+  background-size: cover;
   background-color: #eee;
 }
 
