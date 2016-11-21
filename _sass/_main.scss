@@ -4,28 +4,30 @@ body {
 
 #header {
   padding: 20px 0;
-  background-color: #333;
+  background: url('../images/background.png');
+  background-size: cover;
+  background-color: #222;
 }
 
 #links {
   padding: 20px 0;
-  background-color: #FFDAE0;
+  background-color: #eee;
 }
 
 #videos {
   padding: 20px 0;
-  background-color: #333;
+  background-color: #222;
   h1.header { color: #eee }
 }
 
 #gettin-hard {
   padding-bottom: 20px;
   background-color: #FFDAE0;
-  h1.header { color: #333 }
+  h1.header { color: #222 }
 }
 
 #gettin-sweaty {
-  background-color: #333;
+  background-color: #222;
   padding-bottom: 20px;
   color: #eee;
   h1.header { color: #eee }
@@ -72,7 +74,7 @@ h3 {
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
-  background-color: #333;
+  background-color: #222;
   padding: 15px;
   font-size: 300%;
 }
