@@ -1,43 +1,242 @@
+$dark-grey: #151515;
+$light-grey: #eee;
+$hwq-blue: #3CF;
+$hwq-yellow: #CF3;
+
 body {
   margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neau", sans-serif;
+}
+
+#hotwontquit {
+  .hotwontquit { display: none; }
+  h1.front { color: $hwq-blue; }
+  h1.back { color: $hwq-yellow; margin: 10px 0 0 0; }
+  h1.hot { font-size: 800%; }
+  h1.wont { font-size: 500%; }
+  h1.quit { font-size: 700%; }
+  h1.hot-front { margin: -130px 15px 10px 0; }
+  h1.wont-front { margin: -80px 10px 10px 0; }
+  h1.quit-front { margin: -112px 15px 10px 0; }
+}
+
+ul.links {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: $hwq-blue;
+
+  li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 100%;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    background: $hwq-blue;
+    padding: 5px 0;
+  }
+
+  a.selected, a:hover {
+    color: $hwq-yellow;
+    text-decoration: none;
+    background: $hwq-blue;
+    padding: 5px 0;
+  }
 }
 
 #header {
   padding: 20px 0;
   background: url('../images/background-dark.png');
   background-size: cover;
-  background-color: #222;
+  background-color: $dark-grey;
 }
 
 #links {
-  padding: 20px 0;
-  background-color: #eee;
+  padding: 0;
+  background-color: $hwq-blue;
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  img.fb {
+    width: 50px;
+  }
 }
 
 #videos {
   padding: 20px 0;
-  background-color: #222;
-  h1.header { color: #eee }
+  background-color: $dark-grey;
 }
 
 #gettin-hard {
   padding-bottom: 20px;
-  background-color: #eee;
-  h1.header { color: #222 }
+  background-color: $light-grey;
+  h1.header { color: $dark-grey }
 }
 
-#gettin-sweaty {
-  background-color: #222;
+#social {
+  padding: 20px 0;
+  a h3 {
+    color: black;
+    background: $hwq-yellow;
+  }
+  a h3:hover {
+    color: white;
+    background: $hwq-blue;
+  }
+}
+
+#releases, #release {
+  background-color: $dark-grey;
   padding-bottom: 20px;
-  color: #eee;
-  h1.header { color: #eee }
+  color: $light-grey;
+  h1.header { color: $light-grey }
+}
+
+#news, #post, .post {
+  margin: 20px 0 30px 0;
+
+  p { font-size: 130% }
+
+  h2 {
+    color: $dark-grey;
+    background: none;
+    text-align: left;
+    font-size: 250%;
+    margin: 20px 0 0 0;
+    padding: 0 0 10px 0;
+  }
+
+  h3 {
+    color: #666;
+    background: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid $hwq-blue;
+  }
+
+  a:hover {
+    color: black;
+    background-color: $hwq-yellow;
+    text-decoration: none;
+  }
+
+}
+
+#shows {
+  padding: 40px 0;
+
+  .sidewards { display: none; }
+
+  p.sidewards-notice {
+    display: block;
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    background: $hwq-yellow;
+    margin: -20px 5px 20px 5px;
+    padding: 10px;
+    border: 10px solid $hwq-blue;
+    outline: 5px solid $light-grey;
+  }
+
+  table {
+    font-size: 100%;
+    margin-bottom: 5px;
+
+    thead {
+      color: $light-grey;
+      background: $dark-grey;
+      border-bottom: 3px solid #ccc;
+    }
+
+    th {
+      border-bottom: 0;
+    }
+
+    tr {
+      border-bottom: 1px solid #eee;
+    }
+
+    td {
+      border: 0;
+      padding: 15px 10px;
+    }
+
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid $hwq-blue;
+  }
+
+  a:hover {
+    color: black;
+    background-color: $hwq-yellow;
+    text-decoration: none;
+  }
 }
 
 #footer {
-  padding: 20px 0;
+  padding: 0;
   background: url('../images/background-light.png');
   background-size: cover;
-  background-color: #eee;
+  background-color: $light-grey;
+
+  #headshots {
+    display: none;
+  }
+}
+
+#footer-links {
+  margin: 0;
+  font-weight: bold;
+  background: url('../images/background-dark.png');
+  background-size: cover;
+
+  a { color: white; }
+  a:hover { color: $hwq-blue; }
+
+  ul {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      font-size: 130%;
+      display: inline-block;
+      margin: 0 15px;
+      padding: 0;
+    }
+
+    li:first-of-type {
+      margin-left: 0;
+    };
+
+    li:last-of-type {
+      margin-right: 0;
+    };
+  }
 }
 
 img {
@@ -47,54 +246,42 @@ img {
 h1 {
   font-weight: bold;
   text-align: center;
-  font-family: "Helvetica Neau", sans-serif;
-  font-size: 500%;
+  font-size: 350%;
 }
-
-.hotwontquit { display: none; }
-
-h1.front { color: #3CF; }
-h1.back { color: #CF3; margin: 10px 0 0 0; }
-
-h1.hot { font-size: 800%; }
-h1.quit { font-size: 700%; }
-
-h1.hot-front { margin: -130px 15px 10px 0; }
-h1.wont-front { margin: -80px 10px 10px 0; }
-h1.quit-front { margin: -112px 15px 10px 0; }
 
 h2 {
   font-size: 240%;
   text-align: center;
-  margin: 40px 0 20px 0;
-  background-color: #FF66B2;
-  padding: 10px;
+  background: $hwq-blue;
+  margin: 0 15px 20px 15px;
+  padding: 20px;
   font-weight: bold;
+  color: white;
 }
 
 h3 {
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
-  background-color: #222;
+  background-color: $dark-grey;
   padding: 15px;
   font-size: 300%;
 }
 
 h4 {
   font-size: 200%;
-  color: #eee;
+  color: $light-grey;
   margin: -35px 0px 5px 10px;
   width: 100%;
 }
 
 a {
-  color: #FFF;
+  color: $dark-grey;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3CF;
+  color: $hwq-yellow;
   text-decoration: none;
 }
 
@@ -130,16 +317,57 @@ p {
 	height: 100%;
 }
 
+@media (min-width: 568px) {
+  #shows .sidewards { display: inline-block; }
+  #shows .tallwards { display: none; }
+  #shows p.sidewards-notice { display: none; }
+  h1 { font-size: 400%; }
+  #hotwontquit h1.front { margin: -64px 10px 20px 0; }
+  #hotwontquit h1.back { margin: 20px 0 0 0; }
+  #hotwontquit .hot_wont_quit { display: none; }
+  #hotwontquit .hotwontquit { display: block; }
+  ul.links li { margin-right: 45px; }
+  ul.links li:last-of-type { margin-right: 0; }
+  #footer #headshots { display: block; }
+}
+
 @media (min-width: 768px) {
   .row { margin: 10px 0 }
-  p { font-size: 170%; }
+  p { font-size: 160%; }
   h3 { font-size: 140%; margin: 0; }
-  h1 { font-size: 575%; }
-  h1.front { margin: -92px 10px 20px 0; }
-  h1.back { margin: 20px 0 0 0; }
-  .hot_wont_quit { display: none; }
-  .hotwontquit { display: block; }
-  h2 { font-size: 310% }
+  h2 { font-size: 310%; }
+  #news p { font-size: 160%; }
+  ul.links li { font-size: 160%; }
+  #shows table { font-size: 110%; }
+  #footer-links { font-size: 60%; ul span.pipes { padding: 5px 0; }}
+  #links { background: $light-grey; }
+  .video-container { margin: 40px 0; }
+
+  ul.links {
+    background: $light-grey;
+    li {
+      font-weight: bold;
+      font-size: 120%;
+      list-style: none;
+      padding: 20px 0;
+      margin: 0 2px;
+      display: inline-block;
+    }
+
+    a {
+      color: $dark-grey;
+      text-decoration: none;
+      background: none;
+      padding: 30px 25px;
+    }
+
+    a.selected, a:hover {
+      color: $hwq-yellow;
+      text-decoration: none;
+      background: $hwq-blue;
+      padding: 30px 25px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -147,18 +375,25 @@ p {
   p { font-size: 215%; }
   h3 { font-size: 180%; margin: 0; }
   h1 { font-size: 750%; }
-  h1.front { margin: -120px 15px 30px 0; }
-  h1.back { margin: 30px 0 0 0; }
+  #hotwontquit h1.front { margin: -120px 15px 30px 0; }
+  #hotwontquit h1.back { margin: 30px 0 0 0; }
   h2 { font-size: 390% }
-
+  #news p { font-size: 160%;}
+  ul.links li { font-size: 220%; }
+  #shows table { font-size: 120%; }
+  #footer-links { font-size: 80%; }
 }
 
 @media (min-width: 1200px) {
   .row { margin: 35px 0 }
-  p { font-size: 250%; }
+  p { font-size: 255%; }
   h3 { font-size: 250%; margin: 0; }
   h1 { font-size: 900%; }
-  h1.front { margin: -145px 20px 30px 0; }
-  h1.back { margin: 30px 0 0 0; }
+  #hotwontquit h1.front { margin: -145px 20px 30px 0; }
+  #hotwontquit h1.back { margin: 30px 0 0 0; }
   h2 { font-size: 490% }
+  #news p { font-size: 160%; }
+  ul.links li { font-size: 280%; }
+  #shows table { font-size: 130%; }
+  #footer-links { font-size: 100%; }
 }

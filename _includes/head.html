@@ -8,13 +8,16 @@
   <meta property="og:title" content="HOT WON'T QUIT" />
   <meta property="og:site_name" content="hotwontquit.com"/>
   <meta property="og:url" content="http://hotwontquit.com" />
-  <meta property="og:image" content="http://hotwontquit.com/images/gettin-hard-cover.jpg" />
+  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
   <meta property="og:description" content="{{ site.description }}" />
 
-  <title>HOT WON'T QUIT • PUNK ROCK N ROLL • PORTLAND, OR</title>
+  <title>
+    {% if page.title %}{{ page.title }} • {% endif %}HOT WON'T QUIT • PUNK ROCK N ROLL • PORTLAND, OR
+  </title>
+
   <meta name="description" content="{{ site.description }}">
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
