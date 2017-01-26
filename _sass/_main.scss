@@ -32,7 +32,7 @@ ul.links {
     font-weight: bold;
     font-size: 160%;
     list-style: none;
-    padding: 5px 0;
+    padding: 5px 6px;
     margin: 0;
   }
 
@@ -347,7 +347,7 @@ p {
   #hotwontquit h1.back { margin: 20px 0 0 0; }
   #hotwontquit .hot_wont_quit { display: none; }
   #hotwontquit .hotwontquit { display: block; }
-  ul.links li { margin-right: 45px; }
+  ul.links li { margin-right: 20px; }
   ul.links li:last-of-type { margin-right: 0; }
   #footer #headshots { display: block; }
 }
@@ -358,7 +358,6 @@ p {
   h3 { font-size: 140%; margin: 0; }
   h2 { font-size: 310%; }
   #news p { font-size: 160%; }
-  ul.links {  }
   ul.links li { padding: 0; font-size: 160%; }
   #shows table { font-size: 110%; }
   #shows table img { margin: 0 -60px 0 35px; }
