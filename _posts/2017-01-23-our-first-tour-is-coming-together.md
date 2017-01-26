@@ -5,7 +5,7 @@ selected: news
 image: /images/news/tour-planning.jpg
 ---
 
-We've been in the early stages of booking our first **out of town** shows for a couple months. It started out a little slow, but things have really come together in the last couple weeks. We're so pumped! Get ready for some punk rock n roll, Bay Area!
+We've been in the early stages of booking our first out of town shows for a couple months. It started out a little slow, but things have really come together in the last couple weeks. We're so pumped! Get ready for some punk rock n roll, Bay Area!
 
 ![Rocking and Rolling]({% if page.image %}{{ page.image }}{% endif %} "Rocking and Rolling"){:class="img-responsive"}
 
