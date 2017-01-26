@@ -4,18 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <meta property="fb:admins" content="elimduke" />
-  <meta property="og:title" content="HOT WON'T QUIT" />
-  <meta property="og:site_name" content="hotwontquit.com"/>
-  <meta property="og:url" content="http://hotwontquit.com" />
-  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
-  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="fb:admins" content="hotwontquitpdx" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Hot Won't Quit{% endif %}" />
+  <meta property="og:site_name" content="Hot Won't Quit"/>
+  <meta property="og:url" content="https://hotwontquit.com{{ page.url }}" />
+  <meta property="og:image" content="https://hotwontquit.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
+  <meta property="og:description" name="description" content="{% if page.excerpt %} {{ page.excerpt | remove: '<p>' | remove: '</p>' }}{% else %}{{ site.description }}{% endif %}" />
 
   <title>
-    {% if page.title %}{{ page.title }} • {% endif %}HOT WON'T QUIT • PUNK ROCK N ROLL • PORTLAND, OR
+    {% if page.title %}{{ page.title }} / {% endif %}Hot Won't Quit / Punk Rock n Roll / Portland, OR
   </title>
-
-  <meta name="description" content="{{ site.description }}">
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />

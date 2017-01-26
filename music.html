@@ -2,15 +2,17 @@
 layout: default
 title: MUSIC
 selected: music
-permalink: /music/index.html
+permalink: /music/
 ---
 
-<div id="releases">
+<div id="music">
   <div class="container">
     <div class="row">
       {% for album in site.music %}
         <div class="col-sm-6">
-          <a href="{{ album.url }}"><img class="img-responsive" src="{{ album.image }}"></a>
+          <a href="{{ album.url }}">
+            <img class="img-responsive" src="{{ album.image }}">
+          </a>
         </div>
       {% endfor %}
     </div>
