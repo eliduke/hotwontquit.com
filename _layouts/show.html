@@ -1,0 +1,28 @@
+---
+layout: default
+selected: music
+---
+
+<div id="show">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="col-sm-5">
+          <img class="img-responsive" src="{{ page.flyer }}" />
+        </div>
+        <div class="col-lg-7">
+          <h2>{{ page.when | date: "%B %-d, %Y" }}</h2>
+          <p>{% if page.venue_link %}<a href="{{ page.venue_link }}" target="_blank">{% endif %}{{ page.venue_name }}{% if page.venue_link %}</a>{% endif %} in {{ page.city }}</p>
+          <h3>
+            {% for band in page.bands %}
+              {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
+                {{ band.name }}
+              {% if band.link %}</a>{% endif %}
+              <br/>
+            {% endfor %}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
