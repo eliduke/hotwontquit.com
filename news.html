@@ -11,6 +11,7 @@ permalink: /news/
       <div class="post col-sm-6">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <img class="img-responsive" src="{{ post.image }}" />
         {{ post.excerpt }}
       </div>
     {% endfor %}
