@@ -9,9 +9,7 @@ We've been in the early stages of booking our first out of town shows for a coup
 
 ![Rocking and Rolling]({% if page.image %}{{ page.image }}{% endif %} "Rocking and Rolling"){:class="img-responsive"}
 
-First and foremost we have to give **THE BIGGEST** shoutout to [Protected Left](http://protectedleft.org){:target="_blank"} for hooking us up with two totally awesome shows in San Francisco and Oakland. They found the venue, they found the other bands, they did it all. TWICE! Amazing! Seriously can't thank them enough. We're playing at Eli's Mile High Club for crying outloud!
-
-Oh GEEZ! Hard to imagine it getting better than that.
+First and foremost we have to give **THE BIGGEST** shoutout to [Protected Left](http://protectedleft.org){:target="_blank"} for hooking us up with two totally awesome shows in San Francisco and Oakland. They found the venue, they found the other bands, and they did it all of that TWICE! Amazing! Seriously can't thank them enough. AND, we're playing at Eli's Mile High Club for crying outloud! (Oh GEEZ!)
 
 We also have to thank [Johnny B's](https://www.facebook.com/Johnny-Bs-166694203347915/){:target="_blank"} in Medford, OR, for helping us out **a bunch** with a show on our way down to the Bay Area. We'll be rocking that night with [Hardway Bend](https://www.facebook.com/HardwayBend/){:target="_blank"} and [El Chapo](https://www.facebook.com/elchapotheband/){:target="_blank"}.
 
