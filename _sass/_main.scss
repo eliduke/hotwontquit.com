@@ -10,15 +10,11 @@ body {
 }
 
 #hotwontquit {
+  .row { margin: 0 }
   .hotwontquit { display: none; }
-  h1.front { color: $hwq-blue; }
-  h1.back { color: $hwq-yellow; margin: 10px 0 0 0; }
-  h1.hot { font-size: 800%; }
-  h1.wont { font-size: 500%; }
-  h1.quit { font-size: 700%; }
-  h1.hot-front { margin: -130px 15px 10px 0; }
-  h1.wont-front { margin: -80px 10px 10px 0; }
-  h1.quit-front { margin: -112px 15px 10px 0; }
+  h1 { font-size: 800%; }
+  h1.front { margin: -128px 15px 0 0; color: $hwq-blue; }
+  h1.back { margin: 0; color: $hwq-yellow; }
 }
 
 ul.links {
@@ -119,6 +115,7 @@ ul.links {
     font-size: 200%;
     margin: 20px 0 0 0;
     padding: 0 0 10px 0;
+    line-height: 1.25;
   }
 
   h3 {
@@ -254,7 +251,7 @@ ul.links {
 }
 
 #footer {
-  padding: 0;
+  padding: 20px 0 0 0;
   background: url('../images/background-light.png');
   background-size: cover;
   background-color: $light-grey;
@@ -376,13 +373,17 @@ p {
   #shows .tallwards { display: none; }
   #shows p.sidewards-notice { display: none; }
   #shows table img { margin: 0 -70px 0 15px; }
-  h1 { font-size: 400%; }
-  #hotwontquit h1.front { margin: -64px 10px 20px 0; }
-  #hotwontquit h1.back { margin: 20px 0 0 0; }
-  #hotwontquit .hot_wont_quit { display: none; }
-  #hotwontquit .hotwontquit { display: block; }
+  h1 { font-size: 100%; }
   ul.links li { padding: 0; margin-right: 20px; }
   ul.links li:last-of-type { margin-right: 0; }
+
+  #hotwontquit {
+    .hwq { display: none; }
+    .hotwontquit { display: block; }
+    h1 { font-size: 400%; }
+    h1.front { margin: -63px 8px 10px 0; }
+    h1.back { margin: 10px 0 0 0; }
+  }
 }
 
 @media (min-width: 768px) {
@@ -394,12 +395,22 @@ p {
   #shows table { font-size: 110%; }
   #shows table img { margin: 0 -60px 0 35px; }
   #footer-links { font-size: 60%; ul span.pipes { padding: 5px 0; }}
-  #links { background: $light-grey; }
   .video-container { margin: 40px 0; }
+
+  #hotwontquit {
+    h1 { font-size: 550%; }
+    h1.front { margin: -87px 8px 10px 0; }
+    h1.back { margin: 10px 0 0 0; }
+  }
+
+  #links {
+    background: url('../images/background-light.png');
+    background-size: cover;
+  }
 
   ul.links {
     padding: 0;
-    background: $light-grey;
+    background: none;
     li {
       padding: 0;
       font-weight: bold;
@@ -431,27 +442,35 @@ p {
   p { font-size: 215%; }
   h3 { font-size: 180%; margin: 0; }
   h1 { font-size: 750%; }
-  #hotwontquit h1.front { margin: -120px 15px 30px 0; }
-  #hotwontquit h1.back { margin: 30px 0 0 0; }
   h2 { font-size: 390% }
   #news p { font-size: 160%;}
   ul.links li { font-size: 220%; }
   #shows table { font-size: 120%; }
   #shows table img { margin: 0 -110px 0 80px; }
   #footer-links { font-size: 80%; }
+
+  #hotwontquit {
+    h1 { font-size: 750%; }
+    h1.front { margin: -118px 10px 10px 0; }
+    h1.back { margin: 10px 0 0 0; }
+  }
 }
 
 @media (min-width: 1200px) {
-  .row { margin: 35px 0 }
+  .row { margin: 35px 0; }
   p { font-size: 255%; }
-  h3 { font-size: 250%; margin: 0; }
   h1 { font-size: 900%; }
-  #hotwontquit h1.front { margin: -145px 20px 30px 0; }
-  #hotwontquit h1.back { margin: 30px 0 0 0; }
   h2 { font-size: 490% }
+  h3 { font-size: 250%; margin: 0; }
   #news p { font-size: 160%; }
   ul.links li { font-size: 280%; }
   #shows table { font-size: 130%; }
-  #footer-links { font-size: 100%; }
   #shows table img { margin: 0 -150px 0 125px; }
+  #footer-links { font-size: 100%; }
+
+  #hotwontquit {
+    h1 { font-size: 900%; }
+    h1.front { margin: -142px 12px 15px 0; }
+    h1.back { margin: 15px 0 0 0; }
+  }
 }
