@@ -12,8 +12,8 @@ body {
 #hotwontquit {
   .row { margin: 0 }
   .hotwontquit { display: none; }
-  h1 { font-size: 800%; }
-  h1.front { margin: -128px 15px 0 0; color: $hwq-blue; }
+  h1 { font-size: 700%; }
+  h1.front { margin: -112px 10px 0 0; color: $hwq-blue; }
   h1.back { margin: 0; color: $hwq-yellow; }
 }
 
@@ -61,10 +61,6 @@ ul.links {
   .row {
     margin: 0;
     padding: 0;
-  }
-
-  img.fb {
-    width: 50px;
   }
 }
 
@@ -156,7 +152,7 @@ ul.links {
 #shows {
   padding: 40px 0;
 
-  .sidewards { display: none; }
+  .sidewards { display: none }
 
   p.sidewards-notice {
     display: block;
@@ -191,11 +187,10 @@ ul.links {
     td {
       border: 0;
       padding: 15px 10px;
-    }
 
-    img {
-      width: 25px;
-      padding: 5px 0 0 0;
+      img {
+        margin: 0 0 0 20px;
+      }
     }
   }
 
@@ -210,16 +205,32 @@ ul.links {
     background-color: $hwq-yellow;
     text-decoration: none;
   }
+
+  a.fb {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  a:hover.fb {
+    text-decoration: none;
+    background-color: white;
+  }
 }
 
 #show {
+  padding: 30px 0;
+
   img {
     padding: 0;
     margin: 0;
   }
 
+  img.fb {
+    width: 35px;
+  }
+
   h2 {
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     font-size: 300%;
     background: none;
@@ -247,7 +258,6 @@ ul.links {
     background-color: $hwq-yellow;
     text-decoration: none;
   }
-
 }
 
 #footer {
@@ -292,6 +302,12 @@ ul.links {
 
 img {
   margin: 20px 0;
+}
+
+img.fb {
+  width: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -372,7 +388,6 @@ p {
   #shows .sidewards { display: inline-block; }
   #shows .tallwards { display: none; }
   #shows p.sidewards-notice { display: none; }
-  #shows table img { margin: 0 -70px 0 15px; }
   h1 { font-size: 100%; }
   ul.links li { padding: 0; margin-right: 20px; }
   ul.links li:last-of-type { margin-right: 0; }
@@ -393,7 +408,6 @@ p {
   h2 { font-size: 310%; }
   #news p { font-size: 160%; }
   #shows table { font-size: 110%; }
-  #shows table img { margin: 0 -60px 0 35px; }
   #footer-links { font-size: 60%; ul span.pipes { padding: 5px 0; }}
   .video-container { margin: 40px 0; }
 
@@ -446,7 +460,6 @@ p {
   #news p { font-size: 160%;}
   ul.links li { font-size: 220%; }
   #shows table { font-size: 120%; }
-  #shows table img { margin: 0 -110px 0 80px; }
   #footer-links { font-size: 80%; }
 
   #hotwontquit {
@@ -465,7 +478,6 @@ p {
   #news p { font-size: 160%; }
   ul.links li { font-size: 280%; }
   #shows table { font-size: 130%; }
-  #shows table img { margin: 0 -150px 0 125px; }
   #footer-links { font-size: 100%; }
 
   #hotwontquit {

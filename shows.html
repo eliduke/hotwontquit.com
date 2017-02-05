@@ -7,7 +7,7 @@ permalink: /shows/
 
 <div id="shows">
   <div class="container">
-    <p class="sidewards-notice">HEY! IF YOU TURN YOUR DEVICE SIDEWARDS AND YOU'LL SEE MORE INFO ABOUT EACH SHOW.</p>
+    <p class="sidewards-notice">HEY! IF YOU TURN YOUR DEVICE SIDEWARDS, YOU'LL SEE MORE INFO ABOUT EACH SHOW.</p>
     <table class="table">
       <thead class="thead-inverse">
         <tr>
@@ -15,7 +15,6 @@ permalink: /shows/
           <th>CITY</th>
           <th>VENUE</th>
           <th class="sidewards">WITH</th>
-          <th class="sidewards"></th>
         </tr>
       </thead>
       <tbody>
@@ -26,9 +25,18 @@ permalink: /shows/
             <tr>
               <td>
                 {% if show.more_info %}<a href="{{ show.url }}">{% endif %}
-                  <span class="sidewards">{{ show.when | date: "%B %-d" }}</span>
+                  <span class="sidewards">
+                    {{ show.when | date: "%B %-d" }}
+                  </span>
                   <span class="tallwards">{{ show.when | date: "%-m/%-d" }}</span>
                 {% if show.more_info %}</a>{% endif %}
+                {% if show.fb_event %}
+                <span class="sidewards">
+                  <a class="fb" href="{{ show.fb_event }}" target="_blank">
+                    <img class="fb" src="/images/fb.png">
+                  </a>
+                </span>
+                {% endif %}
               </td>
               <td>{{ show.city }}</td>
               <td>
@@ -43,13 +51,6 @@ permalink: /shows/
                   {% if band.link %}</a>{% endif %}
                   <br/>
                 {% endfor %}
-              </td>
-              <td class="sidewards">
-                {% if show.fb_event %}
-                  <a href="{{ show.fb_event }}" target="_blank">
-                    <img class="fb" src="/images/fb.png">
-                  </a>
-                {% endif %}
               </td>
             </tr>
           {% endif %}

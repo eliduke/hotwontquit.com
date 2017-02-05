@@ -6,22 +6,25 @@ selected: music
 <div id="show">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="col-sm-5">
-          <img class="img-responsive" src="{{ page.flyer }}" />
-        </div>
-        <div class="col-lg-7">
-          <h2>{{ page.when | date: "%B %-d, %Y" }}</h2>
-          <p>{% if page.venue_link %}<a href="{{ page.venue_link }}" target="_blank">{% endif %}{{ page.venue_name }}{% if page.venue_link %}</a>{% endif %} in {{ page.city }}</p>
-          <h3>
-            {% for band in page.bands %}
-              {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
-                {{ band.name }}
-              {% if band.link %}</a>{% endif %}
-              <br/>
-            {% endfor %}
-          </h3>
-        </div>
+      <div class="col-sm-7">
+        <h3>{{ page.when | date: "%B %-d, %Y" }}</h3>
+        <p><small><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</small></p>
+        <p><small>{{ page.details }}</small></p>
+        <p>
+          Sharing the stage with:<br />
+          {% for band in page.bands %}
+            {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
+              <b>{{ band.name }}</b>
+            {% if band.link %}</a>{% endif %}
+            <br/>
+          {% endfor %}
+        </p>
+        {% if page.fb_event %}
+          <p><img class="fb" src="/images/fb.png"> <a href="{{ page.fb_event }}" target="_blank">Facebook Event</a></p>
+        {% endif%}
+      </div>
+      <div class="col-sm-5">
+        <img class="img-responsive" src="{{ page.image }}" />
       </div>
     </div>
   </div>
