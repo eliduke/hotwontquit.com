@@ -406,7 +406,7 @@ p {
   p { font-size: 160%; }
   h3 { font-size: 140%; margin: 0; }
   h2 { font-size: 310%; }
-  #news p { font-size: 160%; }
+  #news p, #post p, .post p{ font-size: 160%; }
   #shows table { font-size: 110%; }
   #footer-links { font-size: 60%; ul span.pipes { padding: 5px 0; }}
   .video-container { margin: 40px 0; }
@@ -457,7 +457,7 @@ p {
   h3 { font-size: 180%; margin: 0; }
   h1 { font-size: 750%; }
   h2 { font-size: 390% }
-  #news p { font-size: 160%;}
+  #news p, #post p, .post p { font-size: 160%;}
   ul.links li { font-size: 220%; }
   #shows table { font-size: 120%; }
   #footer-links { font-size: 80%; }
@@ -475,7 +475,7 @@ p {
   h1 { font-size: 900%; }
   h2 { font-size: 490% }
   h3 { font-size: 250%; margin: 0; }
-  #news p { font-size: 160%; }
+  #news p, #post p, .post p { font-size: 160%; }
   ul.links li { font-size: 280%; }
   #shows table { font-size: 130%; }
   #footer-links { font-size: 100%; }
