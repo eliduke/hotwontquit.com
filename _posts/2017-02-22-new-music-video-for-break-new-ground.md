@@ -15,6 +15,6 @@ We really can't thank Charly enough for making our dreams come true. We got to r
 
 The idea for this video was actually pretty spur of the moment. Eli was rolling around the rink filming Blaine and decided that it would be fun to stitch together some random bits of video and set it to one of our songs. Thankfully our homie Shawn was also filming a bunch and he passed on his video bits.
 
-Prior to this video we only had one from _Gettin' Sweaty_ and continuing the skating theme seemed to make the most sense.
+Prior to this video we only had one from _Gettin' Sweaty_ and continuing the skating theme seemed to make the most sense. Who knows?! Maybe we'll eventually get around to making videos for all of our music!
 
 We hope you enjoy it.
