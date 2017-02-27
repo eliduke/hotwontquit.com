@@ -10,7 +10,7 @@
   <meta property="og:site_name" content="Hot Won't Quit"/>
   <meta property="og:url" content="https://hotwontquit.com{{ page.url }}" />
   <meta property="og:image" content="https://hotwontquit.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
-  <meta property="og:description" name="description" content="{% if page.excerpt %} {{ page.excerpt | remove: '<p>' | remove: '</p>' }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:description" name="description" content="{% if page.excerpt %} {{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}" />
 
   <title>
     {% if page.title %}{{ page.title }} / {% endif %}Hot Won't Quit / Punk Rock n Roll / Portland, OR
