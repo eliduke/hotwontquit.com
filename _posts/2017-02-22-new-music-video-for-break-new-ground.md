@@ -5,7 +5,7 @@ selected: news
 image: /images/news/break-new-ground.png
 ---
 
-Our friends Doug and Amanda asked their daughter Charly what she wanted for her 13th birthday and she said, "I want to go roller skating and I want Hot Won't Quit to play." We couldn't imagine a cooler 13-year-old girl and we were absolutely honored to rock out for such a glorious occasion.
+Our friends Doug and Amanda asked their daughter Charly what she wanted for her 11th birthday and she said, "I want to go roller skating and I want Hot Won't Quit to play." We couldn't imagine a cooler 11-year-old girl and we were absolutely honored to rock out for such a glorious occasion.
 
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/eWpQr9pDh_0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
