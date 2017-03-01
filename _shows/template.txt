@@ -3,13 +3,16 @@ layout: show
 selected: shows
 more_info: false
 
-when: 2017-03-26
-city: Salem, OR
-venue_name: TBA
+when:
+city:
+venue_name:
 venue_link:
 fb_event:
+image:
+
+details:
 
 bands:
-  - name: TBA
+  - name:
     link:
 ---

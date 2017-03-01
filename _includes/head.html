@@ -6,7 +6,15 @@
 
   <meta property="fb:admins" content="elimduke" />
   <meta property="og:type" content="{% if page.url == "/" %}website{% else %}article{% endif %}" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Hot Won't Quit{% endif %}" />
+  <meta property="og:title" content="
+    {% if page.layout == 'show' %}
+      HOT WON'T QUIT at {{ page.venue_name }} in {{ page.city }} on {{ page.when | date: '%B %-d, %Y' }}
+    {% elsif page.title %}
+      {{ page.title }}
+    {% else %}
+      Hot Won't Quit
+    {% endif %}
+  " />
   <meta property="og:site_name" content="Hot Won't Quit"/>
   <meta property="og:url" content="https://hotwontquit.com{{ page.url }}" />
   <meta property="og:image" content="https://hotwontquit.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
