@@ -314,6 +314,8 @@ h1 {
   font-weight: bold;
   text-align: center;
   font-size: 350%;
+  color: $hwq-blue;
+  text-shadow: 5px 2px $hwq-yellow;
 }
 
 h2 {
@@ -403,9 +405,11 @@ blockquote {
   #hotwontquit {
     .hwq { display: none; }
     .hotwontquit { display: block; }
-    h1 { font-size: 400%; }
-    h1.front { margin: -63px 8px 10px 0; }
-    h1.back { margin: 10px 0 0 0; }
+    h1 {
+      font-size: 400%;
+      color: $hwq-blue;
+      text-shadow: 4px 2px $hwq-yellow;
+    }
   }
 }
 
@@ -420,9 +424,11 @@ blockquote {
   .video-container { margin: 40px 0; }
 
   #hotwontquit {
-    h1 { font-size: 550%; }
-    h1.front { margin: -87px 8px 10px 0; }
-    h1.back { margin: 10px 0 0 0; }
+    h1 {
+      font-size: 550%;
+      color: $hwq-blue;
+      text-shadow: 5px 2px $hwq-yellow;
+    }
   }
 
   #links {
@@ -471,9 +477,11 @@ blockquote {
   #footer-links { font-size: 80%; }
 
   #hotwontquit {
-    h1 { font-size: 750%; }
-    h1.front { margin: -118px 10px 10px 0; }
-    h1.back { margin: 10px 0 0 0; }
+    h1 {
+      font-size: 750%;
+      color: $hwq-blue;
+      text-shadow: 5px 2px $hwq-yellow;
+    }
   }
 }
 
@@ -489,8 +497,10 @@ blockquote {
   #footer-links { font-size: 100%; }
 
   #hotwontquit {
-    h1 { font-size: 900%; }
-    h1.front { margin: -142px 12px 15px 0; }
-    h1.back { margin: 15px 0 0 0; }
+    h1 {
+      font-size: 900%;
+      color: $hwq-blue;
+      text-shadow: 6px 3px $hwq-yellow;
+    }
   }
 }
