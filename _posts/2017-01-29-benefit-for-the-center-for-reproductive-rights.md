@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Benefit for the Center for Reproductive Rights
+title: A benefit show for the Center for Reproductive Rights
 selected: news
-image: /images/news/break-new-ground.png
+image: /images/news/benefit-for-the-center-for-reproductive-rights.jpg
 ---
 
 On the evening of January 21st, after a day of stomping through the soggy streets of Portland in solidarity with millions of women, men, and children worldwide, Hot Won’t Quit and our good friends [Plastic Pets](https://www.facebook.com/plasticpets/){:target='blank'} and [This Fair City](http://www.thisfaircity.com){:target='blank'} took the stage at [Kelly's Olympian](http://www.kellysolympian.com/calendar.html){:target='blank'} to benefit the [Center for Reproductive Rights](https://www.reproductiverights.org){:target='blank'}. We want to thank everyone for rocking out and raising money for such an important cause at such an important moment.
+
+![A benefit show for the Center for Reproductive Rights]({% if page.image %}{{ page.image }}{% endif %} "A benefit show for the Center for Reproductive Rights"){:class="img-responsive"}
 
 In their [most recent issue](https://nplusonemag.com/issue-27/the-intellectual-situation/no-president-2/){:target='blank'}, the editors of n+1 magazine struggled to contextualize the election of our current president, and they captured the essential project of post-Trump feminism thusly:
 

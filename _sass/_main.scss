@@ -9,6 +9,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+h1.header {
+  text-shadow: none;
+}
+
 #hotwontquit {
   .row { margin: 0 }
   .hotwontquit { display: none; }
@@ -75,8 +79,37 @@ ul.links {
   h1.header { color: $dark-grey }
 }
 
+#more-videos {
+  background: url("../images/background-light.png");
+
+  h3 {
+    background: none;
+    color: $dark-grey;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      border-bottom: 4px solid $dark-grey;
+      background: none;
+    }
+
+    a.selected, a:hover {
+      color: #666;
+      text-decoration: none;
+      border-bottom: 4px solid $hwq-yellow;
+      background: none;
+    }
+  }
+
+  .video-container {
+    margin-top: 10px;
+  }
+}
+
 #social {
   padding: 20px 0;
+  background: url("../images/background-dark.png");
+
   a h3 {
     color: black;
     background: $hwq-yellow;
@@ -87,18 +120,35 @@ ul.links {
   }
 }
 
-#music{
+#music {
   background-color: $dark-grey;
   padding-bottom: 20px;
   color: $light-grey;
+
   h1.header { color: $light-grey }
+  h3 { margin-bottom: 25px; }
 }
 
 #release {
   background-color: $dark-grey;
   padding-bottom: 20px;
   color: $light-grey;
+
   h1.header { color: $light-grey }
+}
+
+.release-player {
+  a {
+    color: $hwq-blue;
+    text-decoration: none;
+    background: none;
+  }
+
+  a.selected, a:hover {
+    color: $hwq-yellow;
+    text-decoration: none;
+    background: none;
+  }
 }
 
 #news, #post, .post {
@@ -313,7 +363,7 @@ img.fb {
 h1 {
   font-weight: bold;
   text-align: center;
-  font-size: 350%;
+  font-size: 250%;
   color: $hwq-blue;
   text-shadow: 5px 2px $hwq-yellow;
 }
@@ -398,7 +448,7 @@ blockquote {
   #shows .sidewards { display: inline-block; }
   #shows .tallwards { display: none; }
   #shows p.sidewards-notice { display: none; }
-  h1 { font-size: 100%; }
+  h1 { font-size: 500%; }
   ul.links li { padding: 0; margin-right: 20px; }
   ul.links li:last-of-type { margin-right: 0; }
 
@@ -416,9 +466,11 @@ blockquote {
 @media (min-width: 768px) {
   .row { margin: 10px 0 }
   p { font-size: 160%; }
-  h3 { font-size: 140%; margin: 0; }
+  h1 { font-size: 550%; }
   h2 { font-size: 310%; }
+  h3 { font-size: 140%; margin: 0; }
   #news p, #post p, .post p{ font-size: 160%; }
+  #more-videos { h3 { font-size: 160% } }
   #shows table { font-size: 110%; }
   #footer-links { font-size: 60%; ul span.pipes { padding: 5px 0; }}
   .video-container { margin: 40px 0; }
@@ -472,6 +524,7 @@ blockquote {
   h1 { font-size: 750%; }
   h2 { font-size: 390% }
   #news p, #post p, .post p { font-size: 160%;}
+  #more-videos { h3 { font-size: 220% } }
   ul.links li { font-size: 220%; }
   #shows table { font-size: 120%; }
   #footer-links { font-size: 80%; }
@@ -493,6 +546,7 @@ blockquote {
   h3 { font-size: 250%; margin: 0; }
   #news p, #post p, .post p { font-size: 160%; }
   ul.links li { font-size: 280%; }
+  #more-videos { h3 { font-size: 250% } }
   #shows table { font-size: 130%; }
   #footer-links { font-size: 100%; }
 
