@@ -110,10 +110,13 @@ ul.links {
   padding: 20px 0;
   background: url("../images/background-dark.png");
 
+  .row { margin: 20px 0 }
+
   a h3 {
     color: black;
     background: $hwq-yellow;
   }
+
   a h3:hover {
     color: white;
     background: $hwq-blue;
