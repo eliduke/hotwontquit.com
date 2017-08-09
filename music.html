@@ -25,8 +25,7 @@ permalink: /music/
 
     <div class="row">
       <h3>Check out the first two installments in the <em>Gettin'</em> trilogy</h3>
-      {% assign albums = (site.music | sort: 'sort_order') %}
-      {% for album in albums %}
+      {% for album in site.music %}
         <div class="col-sm-6">
           <a href="{{ album.url }}">
             <img class="img-responsive" src="{{ album.image }}">
