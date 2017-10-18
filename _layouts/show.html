@@ -8,10 +8,10 @@ selected: music
     <div class="row">
       <div class="col-sm-7">
         <h3>{{ page.when | date: "%B %-d, %Y" }}</h3>
-        <p><small><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</small></p>
+        <p><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</p>
         <p><small>{{ page.details }}</small></p>
         <p>
-          Sharing the stage with:<br />
+          <small>Sharing the stage with:</small><br />
           {% for band in page.bands %}
             {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
               <b>{{ band.name }}</b>
