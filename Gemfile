@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', '192', group: :jekyll_plugins
+ruby '2.5.1'
+
+gem 'github-pages', '197', group: :jekyll_plugins
