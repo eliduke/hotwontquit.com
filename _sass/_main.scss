@@ -52,7 +52,7 @@ ul.links {
 }
 
 #header {
-  padding: 20px 0;
+  padding: 5px 0 20px 0;
   background: url('../images/background-dark.png');
   background-size: cover;
   background-color: $dark-grey;
@@ -313,6 +313,40 @@ ul.links {
   }
 }
 
+#fan-club {
+  .info {
+    text-align: center;
+
+    h2 {
+      color: #222;
+      background: none;
+    }
+
+    p {
+      font-size: 130%;
+    }
+  }
+
+  #mc_embed_signup {
+    .mc-field-group {
+      width: 100%;
+    }
+
+    .button {
+      width: 100%;
+      font-size: 140%;
+      padding: 5px 0;
+      height: auto;
+      background-color: #9999FF;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: #8989e5;
+      }
+    }
+  }
+}
+
 #footer {
   padding: 20px 0 0 0;
   background: url('../images/background-light.png');
@@ -458,6 +492,7 @@ blockquote {
   #hotwontquit {
     .hwq { display: none; }
     .hotwontquit { display: block; }
+
     h1 {
       font-size: 400%;
       color: $hwq-blue;
@@ -494,10 +529,11 @@ blockquote {
   ul.links {
     padding: 0;
     background: none;
+
     li {
       padding: 0;
       font-weight: bold;
-      font-size: 160%;
+      font-size: 130%;
       list-style: none;
       padding: 20px 0;
       margin: 0 2px;
@@ -508,14 +544,14 @@ blockquote {
       color: $dark-grey;
       text-decoration: none;
       background: none;
-      padding: 30px 25px;
+      padding: 30px 20px;
     }
 
     a.selected, a:hover {
       color: $hwq-yellow;
       text-decoration: none;
       background: $hwq-blue;
-      padding: 30px 25px;
+      padding: 30px 20px;
     }
   }
 }
@@ -528,9 +564,13 @@ blockquote {
   h2 { font-size: 390% }
   #news p, #post p, .post p { font-size: 160%;}
   #more-videos { h3 { font-size: 220% } }
-  ul.links li { font-size: 220%; }
   #shows table { font-size: 120%; }
   #footer-links { font-size: 80%; }
+
+  ul.links li {
+    font-size: 190%;
+    a, a.selected, a:hover { padding: 30px 20px; }
+  }
 
   #hotwontquit {
     h1 {
@@ -548,7 +588,7 @@ blockquote {
   h2 { font-size: 490% }
   h3 { font-size: 250%; margin: 0; }
   #news p, #post p, .post p { font-size: 160%; }
-  ul.links li { font-size: 280%; }
+  ul.links li { font-size: 260%; }
   #more-videos { h3 { font-size: 250% } }
   #shows table { font-size: 130%; }
   #footer-links { font-size: 100%; }
