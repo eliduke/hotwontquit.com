@@ -314,6 +314,8 @@ ul.links {
 }
 
 #fan-club {
+  margin: 20px 0 40px 0;
+
   .info {
     text-align: center;
 
@@ -524,6 +526,10 @@ blockquote {
   #links {
     background: url('../images/background-light.png');
     background-size: cover;
+  }
+
+  #fan-club {
+    margin-top: 0;
   }
 
   ul.links {
