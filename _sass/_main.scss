@@ -347,6 +347,24 @@ ul.links {
       }
     }
   }
+
+  p.mailchimp {
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+    font-size: 100%;
+    text-align: center;
+    color: #c6c6c6;
+
+    a {
+      color: #999;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 #footer {
