@@ -16,9 +16,7 @@ h1.header {
 #hotwontquit {
   .row { margin: 0 }
   .hotwontquit { display: none; }
-  h1 { font-size: 700%; }
-  h1.front { margin: -112px 10px 0 0; color: $hwq-blue; }
-  h1.back { margin: 0; color: $hwq-yellow; }
+  h1 { font-size: 700% }
 }
 
 ul.links {
@@ -83,26 +81,26 @@ ul.links {
   background: url("../images/background-light.png");
 
   h3 {
+    font-size: 160%;
     background: none;
     color: $dark-grey;
     margin: 0;
 
     a {
-      text-decoration: none;
-      border-bottom: 4px solid $dark-grey;
+      text-decoration: underline;
       background: none;
     }
 
-    a.selected, a:hover {
+    a:hover {
       color: #666;
-      text-decoration: none;
-      border-bottom: 4px solid $hwq-yellow;
+      text-decoration: underline;
       background: none;
     }
   }
 
   .video-container {
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -110,7 +108,7 @@ ul.links {
   padding: 20px 0;
   background: url("../images/background-dark.png");
 
-  .row { margin: 20px 0 }
+  .row { margin: 0 }
 
   a h3 {
     color: black;
@@ -368,7 +366,7 @@ ul.links {
 }
 
 #footer {
-  padding: 20px 0 0 0;
+  padding: 20px 0 20px 0;
   background: url('../images/background-light.png');
   background-size: cover;
   background-color: $light-grey;
@@ -379,31 +377,28 @@ ul.links {
   font-weight: bold;
   background: url('../images/background-dark.png');
   background-size: cover;
+  padding: 10px 0;
 
   a { color: white; }
-  a:hover { color: $hwq-blue; }
+  a.selected, a:hover { color: $hwq-blue; }
 
   ul {
     margin: 0;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     overflow: hidden;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
 
     li {
-      font-size: 130%;
-      display: inline-block;
-      margin: 0 15px;
+      font-size: 150%;
+      display: block;
+      margin: 0;
       padding: 0;
     }
 
-    li:first-of-type {
-      margin-left: 0;
-    };
-
-    li:last-of-type {
-      margin-right: 0;
-    };
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -505,6 +500,7 @@ blockquote {
   #shows .sidewards { display: inline-block; }
   #shows .tallwards { display: none; }
   #shows p.sidewards-notice { display: none; }
+  #more-videos { h3 { font-size: 100% } }
   h1 { font-size: 500%; }
   ul.links li { padding: 0; margin-right: 20px; }
   ul.links li:last-of-type { margin-right: 0; }
@@ -530,7 +526,7 @@ blockquote {
   #news p, #post p, .post p{ font-size: 160%; }
   #more-videos { h3 { font-size: 160% } }
   #shows table { font-size: 110%; }
-  #footer-links { font-size: 60%; ul span.pipes { padding: 5px 0; }}
+  #footer-links { font-size: 110% }
   .video-container { margin: 40px 0; }
 
   #hotwontquit {
@@ -540,6 +536,8 @@ blockquote {
       text-shadow: 5px 2px $hwq-yellow;
     }
   }
+
+  #social { .row { margin: 20px 0 } }
 
   #links {
     background: url('../images/background-light.png');
@@ -578,6 +576,20 @@ blockquote {
       padding: 30px 20px;
     }
   }
+
+  #footer-links {
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 0 15px;
+
+        &:first-of-type { margin-left: 0 }
+        &:last-of-type { margin-right: 0 }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -589,7 +601,7 @@ blockquote {
   #news p, #post p, .post p { font-size: 160%;}
   #more-videos { h3 { font-size: 220% } }
   #shows table { font-size: 120%; }
-  #footer-links { font-size: 80%; }
+  #footer-links { font-size: 100% }
 
   ul.links li {
     font-size: 190%;
@@ -606,16 +618,16 @@ blockquote {
 }
 
 @media (min-width: 1200px) {
-  .row { margin: 35px 0; }
-  p { font-size: 255%; }
-  h1 { font-size: 900%; }
+  .row { margin: 35px 0 }
+  p { font-size: 255% }
+  h1 { font-size: 900% }
   h2 { font-size: 490% }
   h3 { font-size: 250%; margin: 0; }
-  #news p, #post p, .post p { font-size: 160%; }
-  ul.links li { font-size: 260%; }
+  #news p, #post p, .post p { font-size: 160% }
+  ul.links li { font-size: 260% }
   #more-videos { h3 { font-size: 250% } }
-  #shows table { font-size: 130%; }
-  #footer-links { font-size: 100%; }
+  #shows table { font-size: 130% }
+  #footer-links { font-size: 130% }
 
   #hotwontquit {
     h1 {
