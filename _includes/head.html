@@ -20,6 +20,11 @@
   <meta property="og:image" content="https://hotwontquit.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
   <meta property="og:description" name="description" content="{% if page.excerpt %} {{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}" />
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <title>
     {% if page.title %}{{ page.title }} / {% endif %}Hot Won't Quit / Punk Rock n Roll / Portland, OR
   </title>
@@ -27,7 +32,6 @@
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
   <link rel="stylesheet" href="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.css" type="text/css" />
   <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" type="text/css">
-
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
 
