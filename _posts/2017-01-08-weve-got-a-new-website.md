@@ -7,7 +7,7 @@ image: /images/news/new-website.png
 
 Check it out, y'all! We've got a fancy new website. Isn't in great? Best website we've ever seen! It's quite a bit more flushed out than the last one. First and foremost, we've got this sweet new News section. But there's also a bunch of other fun stuff going on.
 
-![New Website]({% if page.image %}{{ page.image }}{% endif %} "New Website"){:class="img-responsive"}
+![New Website]({{ page.image }} "New Website"){:class="img-responsive"}
 
 ### NEW NEWS!
 

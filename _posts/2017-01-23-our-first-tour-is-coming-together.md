@@ -7,7 +7,7 @@ image: /images/news/tour-planning.jpg
 
 We've been in the early stages of booking our first out of town shows for a couple months. It started out a little slow, but things have really come together in the last couple weeks. We're so pumped! Get ready for some punk rock n roll, Bay Area!
 
-![Rocking and Rolling]({% if page.image %}{{ page.image }}{% endif %} "Rocking and Rolling"){:class="img-responsive"}
+![Rocking and Rolling]({{ page.image }} "Rocking and Rolling"){:class="img-responsive"}
 
 First and foremost we have to give **THE BIGGEST** shoutout to [Protected Left](http://protectedleft.org){:target="_blank"} for hooking us up with two totally awesome shows in San Francisco and Oakland. They found the venue, they found the other bands, and they did it all of that TWICE! Amazing! Seriously can't thank them enough. AND, we're playing at Eli's Mile High Club for crying outloud! (Oh GEEZ!)
 
