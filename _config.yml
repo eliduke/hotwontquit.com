@@ -17,7 +17,10 @@ future: true
 collections:
   shows:
     output: true
-    permalink: /shows/:path/
+    permalink: /shows/:path
   music:
     output: true
-    permalink: /music/:path/
+    permalink: /music/:path
+  posts:
+    output: true
+    permalink: /news/:title
