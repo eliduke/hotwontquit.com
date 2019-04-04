@@ -190,6 +190,7 @@ ul.links {
     color: black;
     text-decoration: none;
     border-bottom: 3px solid $hwq-blue;
+    line-height: 1.4;
   }
 
   a:hover {
@@ -249,12 +250,10 @@ ul.links {
     color: black;
     text-decoration: none;
     border-bottom: 3px solid $hwq-blue;
-  }
 
-  a:hover {
-    color: black;
-    background-color: $hwq-yellow;
-    text-decoration: none;
+    &:hover {
+      background-color: $hwq-yellow;
+    }
   }
 
   a.fb {
