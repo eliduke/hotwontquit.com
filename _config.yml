@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   We think music should be loud and sweaty AND A WHOLE LOTTA FUN.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://hotwontquit.com" # the base hostname & protocol for your site
-image: "/images/gettin-hard-cover.jpg"
+image: "/images/secrets-square-cover.jpg"
 
 # Build settings
 markdown: kramdown
