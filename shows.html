@@ -3,60 +3,95 @@ layout: default
 title: SHOWS
 selected: shows
 permalink: /shows/
-image: /images/news/tour-planning.jpg
+image: /images/secrets-all.jpg
 ---
 
 <div id="shows">
   <div class="container">
-    <p class="sidewards-notice">HEY! IF YOU TURN YOUR DEVICE SIDEWARDS, YOU'LL SEE MORE INFO ABOUT EACH SHOW.</p>
-    <table class="table">
-      <thead class="thead-inverse">
-        <tr>
-          <th>DATE</th>
-          <th>CITY</th>
-          <th>VENUE</th>
-          <th class="sidewards">WITH</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for show in site.shows %}
-          {% capture show_date %}{{ show.when | date: '%F' }}{% endcapture %}
-          {% capture current_date %}{{ site.time | date: '%F' }}{% endcapture %}
-          {% if show_date > current_date %}
+    <div class='row'>
+      <div class='col-sm-10 col-sm-offset-1'>
+
+        <p class="sidewards-notice">HOT TIP! IF YOU TURN YOUR DEVICE SIDEWARDS, YOU'LL SEE MORE INFO ABOUT EACH SHOW.</p>
+
+        <table class="table">
+          <thead class="thead-inverse">
             <tr>
-              <td>
-                {% if show.more_info %}<a href="{{ show.url }}">{% endif %}
-                  <span class="sidewards">
-                    {{ show.when | date: "%B %-d" }}
-                  </span>
-                  <span class="tallwards">{{ show.when | date: "%-m/%-d" }}</span>
-                {% if show.more_info %}</a>{% endif %}
-                {% if show.fb_event %}
-                <span class="sidewards">
-                  <a class="fb" href="{{ show.fb_event }}" target="_blank">
-                    <img class="fb" src="/images/fb.png">
-                  </a>
-                </span>
-                {% endif %}
-              </td>
-              <td>{{ show.city }}</td>
-              <td>
-                {% if show.venue_link %}<a href="{{ show.venue_link }}" target="_blank">{% endif %}
-                  {{ show.venue_name }}
-                {% if show.venue_link %}</a>{% endif %}
-              </td>
-              <td class="sidewards">
-                {% for band in show.bands %}
-                  {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
-                    {{ band.name }}
-                  {% if band.link %}</a>{% endif %}
-                  <br/>
-                {% endfor %}
-              </td>
+              <th>DATE</th>
+              <th>CITY</th>
+              <th>VENUE</th>
+              <th class="sidewards">WITH</th>
             </tr>
-          {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
+          </thead>
+          <tbody>
+            {% if site.shows > 0 %}
+              {% for show in site.shows %}
+                {% capture show_date %}{{ show.when | date: '%F' }}{% endcapture %}
+                {% capture current_date %}{{ site.time | date: '%F' }}{% endcapture %}
+                {% if show_date > current_date %}
+                  <tr>
+                    <td>
+                      {% if show.more_info %}
+                        <a href="{{ show.url }}">
+                      {% endif %}
+
+                          <span class="sidewards">
+                            {{ show.when | date: "%B %-d" }}
+                          </span>
+                          <span class="tallwards">{{ show.when | date: "%-m/%-d" }}</span>
+
+                      {% if show.more_info %}
+                        </a>
+                      {% endif %}
+
+                      {% if show.fb_event %}
+                        <span class="sidewards">
+                          <a class="fb" href="{{ show.fb_event }}" target="_blank">
+                            <img class="fb" src="/images/fb.png">
+                          </a>
+                        </span>
+                      {% endif %}
+                    </td>
+                    <td>{{ show.city }}</td>
+                    <td>
+                      {% if show.venue_link %}
+                        <a href="{{ show.venue_link }}" target="_blank">
+                      {% endif %}
+
+                        {{ show.venue_name }}
+
+                      {% if show.venue_link %}
+                        </a>
+                      {% endif %}
+                    </td>
+                    <td class="sidewards">
+                      {% for band in show.bands %}
+                        {% if band.link %}
+                          <a href="{{ band.link }}" target="_blank">
+                        {% endif %}
+
+                          {{ band.name }}
+
+                        {% if band.link %}
+                          </a>
+                        {% endif %}
+                        <br/>
+                      {% endfor %}
+                    </td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td colspan=4 class='text-center'>
+                  NO SHOWS BOOKED AT THE MOMENT :/<br/>
+                  Got any leads? <a href="mailto:hotwontquit@gmail.com?subject=Y'all wanna play at my birthday party?">Hit us up</a>.
+                </td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
   </div>
 </div>
