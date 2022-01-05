@@ -23,7 +23,7 @@ image: /images/secrets-all.jpg
             </tr>
           </thead>
           <tbody>
-            {% if site.shows > 0 %}
+            {% if site.shows.size > 0 %}
               {% for show in site.shows %}
                 {% capture show_date %}{{ show.when | date: '%F' }}{% endcapture %}
                 {% capture current_date %}{{ site.time | date: '%F' }}{% endcapture %}
