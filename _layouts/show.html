@@ -24,7 +24,7 @@ selected: music
         {% endif%}
       </div>
       <div class="col-sm-5">
-        <img class="img-responsive" src="{{ page.image }}" />
+        <img class="img-responsive" src="{{ page.image }}?v={{ site.time | date: '%s' }}" />
       </div>
     </div>
   </div>

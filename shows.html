@@ -27,7 +27,7 @@ image: /images/secrets-all.jpg
               {% for show in site.shows %}
                 {% capture show_date %}{{ show.when | date: '%F' }}{% endcapture %}
                 {% capture current_date %}{{ site.time | date: '%F' }}{% endcapture %}
-                {% if show_date > current_date %}
+                {% if show_date >= current_date %}
                   <tr>
                     <td>
                       {% if show.more_info %}
