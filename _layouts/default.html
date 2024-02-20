@@ -32,10 +32,11 @@
       {% if page.title %}{{ page.title }} / {% endif %}Hot Won't Quit / Punk Rock n Roll / Portland, OR
     </title>
 
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
     <link rel="stylesheet" href="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.css" type="text/css" />
     <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" type="text/css">
-    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.css?v={{ site.time | date: '%s' }}">
 
     <script type="text/javascript" src="https://use.fontawesome.com/e98765770c.js"></script>
 
