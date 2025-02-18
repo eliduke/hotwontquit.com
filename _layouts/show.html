@@ -11,7 +11,7 @@ selected: music
         <p><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</p>
         <p><small>{{ page.details }}</small></p>
         <p>
-          <small>Sharing the stage with:</small><br />
+          <small><em>Sharing the stage with</em>:</small><br />
           {% for band in page.bands %}
             {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
               <b>{{ band.name }}</b>
