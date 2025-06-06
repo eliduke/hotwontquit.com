@@ -7,10 +7,10 @@ selected: music
   <div class="container">
     <div class="row">
       <div class='col-sm-5 col-sm-offset-1'>
-        <h3>{{ page.when | date: "%B %-d, %Y" }}</h3>
-        <p><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</p>
+        <!-- <h3>{{ page.when | date: "%B %-d, %Y" }}</h3>
+        <p><a href="{{ page.venue_link }}" target="_blank">{{ page.venue_name }}</a> in {{ page.city }}</p> -->
         <p><small>{{ page.details }}</small></p>
-        <p>
+        <!-- <p>
           <small><em>Sharing the stage with</em>:</small><br />
           {% for band in page.bands %}
             {% if band.link %}<a href="{{ band.link }}" target="_blank">{% endif %}
@@ -21,10 +21,15 @@ selected: music
         </p>
         {% if page.fb_event %}
           <p><img class="fb" src="/images/fb.png"> <a href="{{ page.fb_event }}" target="_blank">Facebook Event</a></p>
-        {% endif%}
+        {% endif%} -->
       </div>
       <div class="col-sm-5">
+        <a href="https://www.shadypinesradio.com/festival-schedule" target="_blank">
         <img class="img-responsive" src="{{ page.image }}?v={{ site.time | date: '%s' }}" />
+        </a>
+        <a href="https://www.shadypinesradio.com/festival-schedule" target="_blank">
+        <img class="img-responsive" src="/images/shows/shady-pines-fest-cover.jpg" style="margin-top: 40px"/>
+        </a>
       </div>
     </div>
   </div>
