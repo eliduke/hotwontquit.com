@@ -211,6 +211,16 @@ $hwq-yellow: #CF3;
     color: $light-grey;
     text-align: left;
   }
+
+  p.coupon {
+    text-align: center;
+    outline: 4px dotted #B1E846;
+    border: 2px dashed #61295E;
+    background: #fff;
+    margin: 20px 40px;
+    padding: 10px 0;
+    color: #333;
+  }
 }
 
 #fan-club {
