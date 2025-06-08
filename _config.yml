@@ -2,8 +2,7 @@
 title: Hot Won't Quit
 email: hotwontquit@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  HOT WON'T QUIT is a PUNK ROCK N ROLL band from PORTLAND, OR.
-  We think music should be loud and sweaty AND A WHOLE LOTTA FUN.
+  HOT WON'T QUIT is an ETHEREAL DOOM GROOVE PUNK band from Portland, OR
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://hotwontquit.com" # the base hostname & protocol for your site
 image: "/images/secrets-square-cover.jpg"
